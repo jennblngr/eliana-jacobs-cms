@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * instagram controller
+ * about controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::instagram.instagram');
+module.exports = createCoreController('api::about.about');

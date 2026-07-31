@@ -16,12 +16,6 @@
       "type": "string",
       "required": true
     },
-    "types": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::type.type",
-      "mappedBy": "categories"
-    },
     "placeholder": {
       "type": "media",
       "multiple": false,
@@ -39,8 +33,28 @@
     },
     "projects": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::project.project",
+      "mappedBy": "category"
+    },
+    "isLightTheme": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "defaultLayout": {
+      "type": "enumeration",
+      "enum": [
+        "list",
+        "gallery"
+      ],
+      "required": true,
+      "default": "list"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
       "inversedBy": "categories"
     }
   }

@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "socialNetworks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-network.social-network"
+    },
+    "cvLink": {
+      "type": "text"
+    },
+    "practices": {
+      "displayName": "Practice",
+      "type": "component",
+      "repeatable": true,
+      "component": "practice.practice",
+      "required": true
+    }
+  }
+}

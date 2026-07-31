@@ -19,12 +19,6 @@
     "date": {
       "type": "date"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "projects"
-    },
     "medias": {
       "displayName": "Image",
       "type": "component",
@@ -50,6 +44,12 @@
       "type": "integer",
       "min": 1,
       "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "projects"
     }
   }
 }

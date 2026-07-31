@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_social_network_social_networks",
+  "info": {
+    "displayName": "Social network",
+    "icon": "chalkboard-teacher",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

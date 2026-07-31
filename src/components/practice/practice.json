@@ -1,22 +1,18 @@
 {
-  "kind": "collectionType",
-  "collectionName": "practices",
+  "collectionName": "components_practice_practices",
   "info": {
-    "singularName": "practice",
-    "pluralName": "practices",
     "displayName": "Practice",
     "description": ""
   },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
+  "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "text": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "image": {
       "type": "component",
