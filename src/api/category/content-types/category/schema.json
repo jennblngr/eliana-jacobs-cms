@@ -31,12 +31,6 @@
       "default": 1,
       "min": 1
     },
-    "projects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project",
-      "mappedBy": "category"
-    },
     "isLightTheme": {
       "type": "boolean",
       "default": false,
@@ -55,6 +49,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::type.type",
+      "inversedBy": "categories"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
       "inversedBy": "categories"
     }
   }
